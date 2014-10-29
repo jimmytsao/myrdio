@@ -2,12 +2,17 @@
 
 (function(){
 
+  var pubsub = {};
+  _.extend(pubsub, Backbone.Events);
+
   window.myRdioApp = {
     views: {},
     models: {},
     collections: {},
     templates: {},
-    routers: {}
+    routers: {},
+    pubsub: pubsub
   };
-  
+
+
 })();
