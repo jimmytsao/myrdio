@@ -10,7 +10,9 @@
     },
 
     render: function(){
-      this.$el.html(new App.views.IndexSearchView().render().el);
+      this.$el.html(App.templates.index());
+      this.$el.find('#search').html(new App.views.IndexSearchView().render().el);
+      this.$el.find('#results').html(new App.views.SearchResultsView().render().el);
     }
   });
 
