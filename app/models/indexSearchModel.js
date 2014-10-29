@@ -2,7 +2,6 @@
 
 (function(App, Backbone){
 
-  App.models.IndexSearchModel = Backbone.Model.extend({
+  App.models.IndexSearchModel = Backbone.Model.extend({});
 
-  });
 })(myRdioApp, Backbone);

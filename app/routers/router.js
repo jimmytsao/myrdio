@@ -14,7 +14,6 @@
     },
 
     search: function(query){
-      console.log('query: ',query);
     }
   });
 })(myRdioApp, Backbone);
