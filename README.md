@@ -9,7 +9,7 @@ app.js    - configuration of global app object
 init.js   - starts the application
 router.js - router setup for app
 
-'''
+```
 indexView.js  - overall view of the app
 |    model: indexModel.js
 |    template: indexTemplate.js
@@ -24,5 +24,5 @@ indexView.js  - overall view of the app
          |----searchResultView.js
                   model: searchResultModel.js
                   template: searchResultTemplate.js
-'''
+```
                   
