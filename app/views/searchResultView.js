@@ -2,13 +2,15 @@
 
 (function(App, Backbone){
 
+  //View for each individual search result
   App.views.SearchResultView = Backbone.View.extend({
     initialize: function(model){
       this.model = model;
 
-      this.listenTo(this.model, 'remove', function(d){
+      //Remove the view if it's model has been removed from the collection to avoid memory leaks
+      this.listenTo(this.model, 'remove', function(){
         this.remove();
-      });
+      }); 
     },
 
     render: function(){

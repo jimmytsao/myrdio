@@ -3,17 +3,14 @@
 (function(App, Backbone){
   
   App.routers.Router = Backbone.Router.extend({
-
+    //Setting up routes
     routes: {
-      '': 'index',
-      'search/:query': 'search'
+      '': 'index'
     },
 
+    //Instantiate the Index View (overall view for the app)
     index: function(){
       new App.views.IndexView({el: '#main'});
-    },
-
-    search: function(query){
     }
   });
 })(myRdioApp, Backbone);

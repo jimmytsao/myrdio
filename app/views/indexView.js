@@ -2,6 +2,7 @@
 
 (function(App, Backbone){
 
+  //Overall view for the app
   App.views.IndexView = Backbone.View.extend({
 
     initialize: function(){
@@ -9,10 +10,11 @@
       this.render();
     },
 
+    //Render template and subviews
     render: function(){
       this.$el.html(App.templates.index());
-      this.$el.find('#search').html(new App.views.IndexSearchView().render().el);
-      this.$el.find('#results').html(new App.views.SearchResultsView().render().el);
+      new App.views.IndexSearchView({el: '#search'}).render();
+      new App.views.SearchResultsView({el: '#results'}).render();
     }
   });
 

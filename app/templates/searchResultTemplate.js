@@ -2,11 +2,11 @@
 
 (function(App, _){
   
+  //Template for each result returned by the search query
   var template = [
-    '<div>',
+    '<div class="searchResult">',
       '<img src=<%= icon %>>',
-      '<%= type %>',
-      '<%= id %>',
+      '<%= name %>',
     '</div>'].join('');
 
   App.templates.searchResult = _.template(template);

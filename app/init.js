@@ -2,6 +2,7 @@
 
 (function(App, $, Backbone){
   
+  //Start the application once the DOM has been constructed
   $(document).ready(initialize);
 
   function initialize(){
